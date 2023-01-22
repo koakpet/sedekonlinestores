@@ -1,0 +1,59 @@
+<%- include("partials/header") %>
+<!--
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto" style="border: 1px solid red;">
+                <img src="images/logo.png" height="120" style="position: relative;" alt="">
+                <p class="lead text-muted tagline">...quality at a bargain</p>
+            </div>
+        </div>
+    </section>
+-->
+    <div class="py-2 text-center">
+        <div class="logo">
+            <img src="images/logo.png" height="90" alt="">
+            <p class="tagline"><i>...quality at a bargain</i></p>
+        </div>
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <p class="lead text-muted">Your No. 1 store for quailty internal doors, kitchen cabinets and wardrobes at the best prices.</p>
+
+            <p>
+              <a href="/about" class="btn btn-secondary my-2">About Us</a>
+              <a href="#" class="btn btn-primary my-2">Contact Us</a>
+            </p>
+          </div>
+        
+    </div>
+    
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                <% products.forEach(function(product){ %>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="<%= 'images/products/' + product.image %>" alt="" height="300" width="100%">
+
+                        <div class="card-body">
+                            <h6 class="card-title"><%= product.product %></h6>
+                            <p class="card-text"><%= product.price %></p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                                    <!--<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>-->
+                                </div>
+
+                                <!--<small class="text-muted">9 mins</small>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% }) %>
+
+            </div>
+        </div>
+    </div>
+
+<%- include("partials/footer") %>

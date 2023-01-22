@@ -1,0 +1,15 @@
+
+.logo {
+    position: relative;
+    width: 120px;
+    margin:auto;
+}
+
+.tagline {
+    position: absolute;
+    bottom: -12px;
+    right:12px;
+    font-family: "Comic San MS", cursive, sans-serif;
+    font-weight: bold;
+    font-size: 9px;
+}
