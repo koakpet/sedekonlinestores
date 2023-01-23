@@ -13,3 +13,9 @@
     font-weight: bold;
     font-size: 9px;
 }
+
+fieldset {
+    border: 1px solid black;
+    margin: 1em;
+    padding: 0.3em;
+}
